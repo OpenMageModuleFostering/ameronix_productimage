@@ -1,0 +1,42 @@
+<config>
+    <tabs>
+        <ameronix translate="label" module="amxproductimage">
+            <label>Ameronix</label>
+            <sort_order>100</sort_order>
+        </ameronix>
+    </tabs>
+    <sections>
+        <ameronix_amxproductimage_options translate="label" module="amxproductimage">
+            <label>Product Grid Image</label>
+            <tab>ameronix</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<image translate="label">
+                    <label>Image Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    	<fields>
+								        <image_size>
+								            <label>Image Size in Grid</label>
+								            <frontend_type>text</frontend_type>
+								            <sort_order>1</sort_order>
+								            <show_in_default>1</show_in_default>
+								            <show_in_website>1</show_in_website>
+								            <show_in_store>1</show_in_store>
+								            <comment>in pixels</comment>
+								            <validate>validate-number validate-greater-than-zero</validate>                    
+								        </image_size>
+								    </fields>                
+                </image>
+            </groups>                    
+        </ameronix_amxproductimage_options>
+    </sections>
+</config>

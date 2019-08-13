@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Ameronix_Productimage",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Adds main product image to the product grid",
+    "authors": [
+    {
+        "name": "Ameronix",
+        "email": "bharris@ameronix.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ameronix_Productimage</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Adds main product image to the product grid</summary>
+    <description>This module gives back end users the ability to see a product's main image right on the product grid.&#xD;
+&#xD;
+The image column will display "--No Image--" if there is not a main image, and you will be able to sort and filter products based this column.&#xD;
+&#xD;
+You may also control the size of the thumbnail on the grid.</description>
+    <notes>First release</notes>
+    <authors><author><name>Ameronix</name><user>ameronix</user><email>bharris@ameronix.com</email></author></authors>
+    <date>2013-06-14</date>
+    <time>19:54:42</time>
+    <contents><target name="magelocal"><dir name="Ameronix"><dir name="Productimage"><dir name="Block"><dir name="Adminhtml"><dir name="Catalog"><dir name="Product"><dir name="Renderer"><file name="Image.php" hash="7e384e986d54ca305bef7a61f48dbd62"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="83fb320ec6dd30d721e3d5f0e2c7bf63"/></dir><dir name="Model"><file name="Observer.php" hash="1cfb58e0964090c40ab9c5b025682ba9"/></dir><dir name="etc"><file name="config.xml" hash="1b8075c5d33ff1778f62c2b15efa20b1"/><file name="system.xml" hash="d73085a83d52e95422d3bfcd2e372ee2"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ameronix_Productimage.xml" hash="1e90f007fa8e6ed5e93be4cd6f98b20b"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.3</max></php></required></dependencies>
+</package>

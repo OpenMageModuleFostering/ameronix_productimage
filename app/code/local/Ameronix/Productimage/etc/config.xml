@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Ameronix_Productimage>
+			<version>0.1.0</version>
+		</Ameronix_Productimage>
+	</modules>
+
+	<global>
+		<helpers>
+			<amxproductimage>
+				<class>Ameronix_Productimage_Helper</class>
+			</amxproductimage>
+		</helpers>
+
+		<blocks>
+			<amxproductimage>
+				<class>Ameronix_Productimage_Block</class>
+			</amxproductimage>
+		</blocks>
+
+		<models>
+			<amxproductimage>
+				<class>Ameronix_Productimage_Model</class>
+				<resourceModel>amxproductimage_mysql4</resourceModel>
+			</amxproductimage>
+		</models>
+
+		<resources>
+			<amxproductimage_setup>
+				<setup>
+					<module>Ameronix_Productimage</module>
+				</setup>
+			</amxproductimage_setup>
+		</resources>
+
+	</global>
+
+	<adminhtml>
+
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<ameronix_amxproductimage_options>
+											<title>Ameronix Product Image</title>
+										</ameronix_amxproductimage_options>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+
+
+		<events>
+			<core_block_abstract_prepare_layout_before>
+				<observers>
+					<amxproductimage_append_type_column>
+						<type>model</type>
+						<class>Ameronix_Productimage_Model_Observer</class>
+						<method>appendCustomColumn</method>
+					</amxproductimage_append_type_column>
+				</observers>
+			</core_block_abstract_prepare_layout_before>
+			<eav_collection_abstract_load_before>
+				<observers>
+					<amxproductimage_append_type_collection>
+						<type>model</type>
+						<class>Ameronix_Productimage_Model_Observer</class>
+						<method>appendCustomAttribute</method>
+					</amxproductimage_append_type_collection>
+				</observers>
+			</eav_collection_abstract_load_before>
+		</events>
+
+	</adminhtml>
+
+
+	<admin>
+		<routers>
+			<amxproductimage>
+				<use>admin</use>
+				<args>
+					<module>Ameronix_Productimage</module>
+					<frontName>amxproductimage</frontName>
+				</args>
+			</amxproductimage>
+		</routers>
+	</admin>
+
+
+	<default>
+		<ameronix_amxproductimage_options>
+			<image>
+				<image_size>100</image_size>
+			</image>
+		</ameronix_amxproductimage_options>
+	</default>
+
+
+</config>
