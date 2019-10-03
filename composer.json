@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Ameronix_Productimage",
+    "name": "openmage-module-fostering\/ameronix_productimage",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Adds main product image to the product grid",
     "authors": [

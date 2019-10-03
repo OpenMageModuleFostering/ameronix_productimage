@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Adds main product image to the product grid
